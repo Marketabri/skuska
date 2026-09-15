@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Design tokens – Spojená škola Nižná
+   Single source of truth for colours, type, spacing and elevation.
+   Never hard-code these values in component rules.
+   ========================================================================== */
+
+:root {
+    /* --- Brand ------------------------------------------------------------ */
+    --color-navy: #1a2744;
+    --color-navy-dark: #121c31;
+    --color-navy-deep: #0c1322;
+    --color-navy-mid: #2a3c60;
+    --color-navy-soft: #3b5080;
+
+    --color-gold: #b8972a;
+    --color-gold-light: #d4b04a;
+    --color-gold-dark: #96791f;
+    --color-gold-wash: #f6f0dc;
+
+    /* --- Neutrals --------------------------------------------------------- */
+    --color-ink: #1c2331;
+    --color-body: #4a5568;
+    --color-muted: #6b7280;
+    --color-line: #e2e5ea;
+    --color-line-soft: #eef0f4;
+    --color-surface: #ffffff;
+    --color-bg: #f7f8fa;
+    --color-bg-alt: #eef1f6;
+
+    /* --- On-dark ---------------------------------------------------------- */
+    --color-on-navy: #f3f5f9;
+    --color-on-navy-muted: #a9b4c8;
+
+    /* --- Typography ------------------------------------------------------- */
+    --font-heading: "Merriweather", Georgia, "Times New Roman", serif;
+    --font-body: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+    --fs-xs: 0.8125rem;
+    --fs-sm: 0.9375rem;
+    --fs-base: 1.0625rem;
+    --fs-md: 1.1875rem;
+    --fs-lg: clamp(1.125rem, 0.4vw + 1.03rem, 1.25rem);
+    --fs-h3: clamp(1.125rem, 0.5vw + 1.02rem, 1.3125rem);
+    --fs-h2: clamp(1.375rem, 1vw + 1.15rem, 1.75rem);
+    --fs-h1: clamp(1.75rem, 2.4vw + 1.2rem, 2.5rem);
+
+    --lh-tight: 1.22;
+    --lh-snug: 1.4;
+    --lh-base: 1.68;
+
+    --ls-caps: 0.14em;
+
+    /* --- Spacing (4px base) ----------------------------------------------- */
+    --sp-1: 0.25rem;
+    --sp-2: 0.5rem;
+    --sp-3: 0.75rem;
+    --sp-4: 1rem;
+    --sp-5: 1.5rem;
+    --sp-6: 2rem;
+    --sp-7: 2.5rem;
+    --sp-8: 3rem;
+    --sp-9: 4rem;
+    --sp-10: 5rem;
+    --sp-section: clamp(2rem, 3.5vw, 3rem);
+
+    /* --- Layout ----------------------------------------------------------- */
+    --container: 1180px;
+    --container-narrow: 820px;
+    --gutter: clamp(1.125rem, 4vw, 2.5rem);
+    --header-h: 72px;
+
+    /* --- Radii & elevation ------------------------------------------------ */
+    --radius-sm: 4px;
+    --radius: 8px;
+    --radius-lg: 14px;
+
+    --shadow-sm: 0 1px 2px rgba(26, 39, 68, 0.06), 0 2px 6px rgba(26, 39, 68, 0.05);
+    --shadow: 0 2px 6px rgba(26, 39, 68, 0.07), 0 10px 24px rgba(26, 39, 68, 0.08);
+    --shadow-lg: 0 4px 12px rgba(26, 39, 68, 0.09), 0 20px 48px rgba(26, 39, 68, 0.12);
+
+    /* --- Motion ----------------------------------------------------------- */
+    --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+    --dur: 200ms;
+
+    /* --- Decorative circuit-board motif ----------------------------------- */
+    /* Subtle PCB trace pattern; used sparingly on dark surfaces only. */
+    --pattern-circuit: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cg fill='none' stroke='%23b8972a' stroke-width='1' stroke-opacity='0.28'%3E%3Cpath d='M0 30h42l16 16h40M140 30H98'/%3E%3Cpath d='M20 0v22l18 18v40l-18 18v42'/%3E%3Cpath d='M140 96h-38l-14-14H58'/%3E%3Cpath d='M110 140v-26l14-14h16'/%3E%3Cpath d='M70 140v-28'/%3E%3C/g%3E%3Cg fill='%23b8972a' fill-opacity='0.42'%3E%3Ccircle cx='42' cy='30' r='2.6'/%3E%3Ccircle cx='98' cy='46' r='2.6'/%3E%3Ccircle cx='20' cy='22' r='2.6'/%3E%3Ccircle cx='38' cy='80' r='2.6'/%3E%3Ccircle cx='102' cy='96' r='2.6'/%3E%3Ccircle cx='58' cy='82' r='2.6'/%3E%3Ccircle cx='124' cy='100' r='2.6'/%3E%3Ccircle cx='70' cy='112' r='2.6'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Breakpoints used across the project (media queries cannot read variables):
+   sm  480px  |  md  768px  |  lg  1024px  |  xl  1180px                     */

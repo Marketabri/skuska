@@ -1,0 +1,14 @@
+# JetBrains IDE
+.idea/
+
+# Claude Code local settings
+.claude/settings.local.json
+claude.md
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs
+*.log
